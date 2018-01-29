@@ -1,0 +1,205 @@
+html { 
+  margin: 0px;
+  padding:0px;
+  background: url(images/Fond%20inscription.jpg) no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase ;
+}
+
+h3{
+    background: rgba(255,255,255,0.5);
+    margin-right: 570px;
+    background-color: gray;
+    border-radius: 4px;
+    border: 1px solid;
+}
+
+header {
+    
+    background-color: whitesmoke;
+    padding: 1px;
+}
+
+body {
+    
+    
+    
+}
+
+footer {
+    
+    
+    
+}
+
+form {
+    /* Pour le centrer dans la page */
+    margin: 0 auto;
+    width: 400px;
+    /* Pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    
+    float: left;
+    background: rgba(255,255,255,0);
+}
+
+form div + div {
+    margin-top: 1em;
+}
+
+label {
+    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
+    display: inline-block;
+    width: 90px;
+    text-align: center;
+    background-color: gray;
+    border: 1px solid;
+}
+
+input, textarea {
+    /* Afin de s'assurer que tous les champs textuels utilisent la même police
+       Par défaut, textarea utilise une police à espacement constant */
+    font: 1em sans-serif;
+
+    /* Pour donner la même dimension à tous les champs textuels */
+    width: 300px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* Pour harmoniser l'apparence des bordures des champs textuels */
+    border: 1px solid; 
+}
+
+input:focus, textarea:focus {
+    /* Afin de rehausser les éléments actifs */
+    border-color: #000;
+}
+
+textarea {
+    /* Pour aligner correctement les champs multilignes et leurs étiquettes */
+    vertical-align: top;
+
+    /* Pour donner assez d'espace pour entrer du texte */
+    height: 5em;
+
+    /* Pour permettre aux utilisateurs de redimensionner un champ textuel horizontalement
+       Cela ne marche pas avec tous les navigateurs  */
+    resize: vertical;
+}
+
+.button {
+    /* Pour positionner les boutons de la même manière que les champs textuels */
+    padding-left: 90px; /* même dimension que les étiquettes */
+}
+
+button {
+    /* Cette marge représente approximativement le même espace
+       que celui entre les étiquettes et les champs textuels */
+    margin-left: .5em;
+}
+
+.zoom {
+margin:auto;
+}
+.zoom p {
+text-align:center;
+}
+.zoom img {
+float: right;
+}
+.zoom img:hover {
+width:300px;
+height:50px;
+}
+
+.zoom1 {
+margin:auto;
+}
+.zoom1 p {
+text-align:center;
+}
+.zoom1 img {
+float: right;
+    
+}
+.zoom1 img:hover {
+width:300px;
+height:50px;
+}
+
+.zoom2 {
+margin:auto;
+}
+.zoom2 p {
+text-align:center;
+}
+.zoom2 img {
+float: right;
+}
+.zoom2 img:hover {
+width:300px;
+height:50px;
+}
+
+.lien {
+    
+    margin-right: 150px;
+    margin-top: 60px;
+    float: right;
+}
+
+.lien a:hover{
+   color: red;
+}
+
+.partenaire img {
+    
+    margin-left: 15px;
+    height: 100px;
+}
+
+.partenaire {
+    
+    margin-left: 510px;
+}
+
+.partenaire p {
+    
+    text-transform: uppercase;
+    margin-left: 75px;
+    margin-right: 595px;
+    background-color: white;
+    color: gray;
+    border-radius: 1px;
+}
+
+.reseaux img {
+    
+    margin-left: -30px;
+    margin-right: 60px;
+    height: 50px;
+}
+
+.reseaux {
+    padding-left:  150px;
+    margin-bottom: 100px;
+    margin-top: -80px;
+    margin-left: 20px;
+}
+
+.reseaux p {
+    
+    margin-left: -150px;
+    display: flex;
+    float: left;
+    background-color: white;
+    color: gray;
+    border-radius: 1px;
+}

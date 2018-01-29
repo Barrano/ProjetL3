@@ -1,0 +1,151 @@
+<?php
+$nom=$prenom=$telephone=§adresse=$courriel=$motdepasse="";
+$nomErreur=$prenomErreur=$telErreur=§adresseErreur=$courrielErreur=$motdepasseErreur="";
+if($_SERVER['REQUEST_METHOD']=="POST")
+{
+    $nom=$_POST["nom"];
+    $prenom=$_POST["prenom"];
+    $telephone=$_POST["telephone"];
+    $adresse=$_POST["adresse"];
+    $courriel=$_POST["courriel"];
+    §motdepasse=§_POST["motdepasse"];
+    if(empty($nom))
+    {
+      $nomErreur="Veuillez saisir un nom s'il vous plait !" ;   
+    }
+    if(empty($prenom))
+    {
+      $prenomErreur="Veuillez saisir un prenom s'il vous plait !" ;   
+    }
+    
+    if(empty($telephone))
+    {
+      $telErreur="Veuillez saisir un numéro de téléphone s'il vous plait !" ;   
+    }
+    if(empty(§adresse))
+    {
+      $adresseErreur="Veuillez saisir une adresse s'il vous plait !" ;
+    }
+    
+    if(empty($courriel))
+    {
+      $courrielErreur="Veuillez saisir un mail s'il vous plait !" ;   
+    }
+    
+    if(empty($motdepasse))
+    {
+      $motdepasseErreur="Veuillez saisir un mot de passe s'il vous plait !" ;   
+    }
+}
+
+?>
+
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="style-inscription.css" media="screen" />
+<meta charset="utf-8">
+<head>
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+        
+<header>
+    <h1>Formulaire d'inscription:</h1>
+</header>
+  
+    <h3>Quelle merveilleuse surprise la vie vous réserve-t'elle aujourd'hui ? Voulez-vous la découvrir ?</h3>
+    
+    <div class="formulaire">
+        <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
+    <div>
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" placeholder="Votre nom" />
+        <p class="MessageErreur"><?php echo $nomErreur ?></p>
+    </div>
+    <div>
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" placeholder="Votre prénom" />
+        <p class="MessageErreur"><?php echo $prenomErreur ?></p>
+    </div>
+    <div>
+        <label for="telephone">Tél:</label>
+        <input type="tel" id="telephone" placeholder="Votre numéro de téléphone" />
+        <p class="MessageErreur"><?php echo $telErreur ?></p>
+    </div>
+    <div>
+        <label for="adresse">Adresse:</label>
+        <input type="text" id="adresse" placeholder="Votre adresse" />
+        <p class="MessageErreur"><?php echo $adresseErreur ?></p>
+    </div>
+    <div>
+        <label for="courriel">Mail:</label>
+        <input type="email" id="courriel" placeholder="Votre email" />
+        <p class="MessageErreur"><?php echo $courrielErreur ?></p>
+    </div>
+    <div>
+        <label for="motdepasse">Mot de passe:</label>
+        <input type="password" id="motdepasse" placeholder="Votre mot de passe" />
+        <p class="MessageErreur"><?php echo $motdepasseErreur ?></p>
+    </div>
+    <div class="button">
+        <button type="submit">Je m'inscris</button>
+    </div>
+</form>  
+    </div>
+    <br><br><br>
+    <div class="zoom">
+    <p>
+        <a href="/Accueil.html" >
+        <img src="images/via%20facebook.PNG" alt="Horizon Montpellier" /></a>
+    </p>
+    </div><br><br>
+    
+    <div class="zoom1">
+    <p>
+        <a href="Accueil.html" >
+        <img src="images/via%20twitter.PNG" alt="Horizon Montpellier" /> </a>
+    </p>
+    </div><br><br>
+    
+    <div class="zoom2">
+    <p>
+        <a href="Accueil.html" >
+        <img src="images/via%20google+.PNG" alt="Horizon Montpellier" /> </a>
+    </p>
+    </div>
+        
+</body>  
+    
+<footer>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="lien">
+        <a href="#">Contact</a><br>
+        <a href="#">informations légales</a><br>
+        <a href="#">l'équipe</a><br>
+        <a href="Accueil.html">signaler un problème</a>
+    </div>
+    
+    <div class="partenaire">
+        
+        <p>Nos partenaires :</p>
+        
+        <img src="images/Ville_de_Montpellier.png">
+        <img src="images/logo_agglo.jpg">
+        <img src="images/mhsc.PNG">
+    </div>
+ 
+    <div class="reseaux">
+        
+        <p>Suivez-nous :</p>
+        
+        <img src="images/facebook.png">
+        <img src="images/twitter.jpg">
+        <img src="images/youtube.png">
+    </div>
+    
+</footer>
+    
+</html>
+
+
+

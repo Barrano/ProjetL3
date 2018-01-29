@@ -1,0 +1,28 @@
+body {
+color:black;
+background-color:white;
+background-image:url(images/Fond%20inscription.jpg);
+background-attachment:fixed;
+background-repeat:no-repeat;
+background-position: center;
+background-size: 100%;
+}
+
+.lien {
+    
+    margin-right: 150px;
+    float: right;
+}
+
+.partenaire {
+    
+    background: url("");
+    
+    background: url("");
+    
+    background: url("images/mhsc.PNG");
+    
+    float: left;
+    margin-left: 200px;
+    font-size: 10px;
+}
