@@ -1,0 +1,66 @@
+body
+{
+    background: url(../images/Montpellier.jpg) no-repeat center;
+}
+.formulaire
+{
+    width: 660px;
+    margin-left: 290px;/* ce la nous a permis de deplacer notre div de gauche vers la droite de 400px*/
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 1px solid yellow;
+    color: blue;
+        
+}
+#message
+{
+    width: 500px;
+    height: 100px;
+}
+div
+{
+    float: left;
+}
+h1
+{
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+    color: white;
+    
+   
+}
+label
+{
+    font-size: 25px;
+}
+input
+{
+    font-size: 20px;
+}
+.valide
+{
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 22px;
+     background: black;
+    color:blue;
+}
+.MsgeErr
+{
+    color: red;
+}
+.Msgeenvoi
+{
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+.etoile
+{
+    color: black;
+}
