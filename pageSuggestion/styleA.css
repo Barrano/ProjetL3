@@ -1,0 +1,253 @@
+html
+{
+     padding-top: 20px;
+     background-color: white;
+}
+
+body
+{
+    margin: auto;
+    /*background-color: olive;*/
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color: #181818;
+    /*border: solid;*/
+}
+#bloc_page
+{
+  width: 900px;
+  margin: auto;
+}
+section h1, footer h1, nav a
+{
+  font-family: Dayrom, serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+header
+{
+  background: url('../images/ciel.jpg') repeat-x bottom;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /*aligne au coin en bas*/
+}
+
+#titre_principal
+{
+  display: block;
+  flex-direction: column;
+  margin-top:  0px;
+}
+#logo
+{
+   display: block;
+   flex-direction: row;
+   align-items: baseline;
+ 
+   
+}
+#logo img
+
+{
+    width: 99px;
+    height: 60px;
+    margin-left: 110px;
+    margin-top: 8px;
+    border: solid;
+}
+header h1
+{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin: 25px 20px 20px 10px;
+}
+header h2
+
+{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+}
+/*Navigation */
+nav ul
+{
+  list-style-type: none; /*enleve les points de liste "puces"*/
+  display: flex; /*mets sur la meme ligne*/
+}
+nav li
+{
+    margin: 15px; /*mets de l'espace entre les éléments*/
+}
+nav a
+{
+  font-size: 1.3em; /*taille ecriture*/
+  color: #181818; /*couleur noir texte*/
+  padding-bottom: 3px;
+  text-decoration: none; /*enleve le soulignage*/
+}
+nav a:hover
+{
+  color: #760001;
+  border-bottom: 3px solid #760001; /*caractérique du passage de la souris*/
+}
+table
+{
+   text-align: center;
+}
+
+#banniere_description
+{
+ text-align: center;
+}
+
+#banniere_description1
+{
+ text-align: center;
+}
+#banniere_description2
+{
+ text-align: center;
+}
+#banniere_description3
+{
+ text-align: center;
+}
+#banniere_description4
+{
+ text-align: center;
+}
+#banniere_im /*suggestion*/
+{
+  margin: auto;
+  margin-top: 20px;
+  height: 40px;
+  width: 200px;
+  border-radius: 5px; /*arrondit les angles*/
+  position: relative;
+  box-shadow: 4px 4px 4px #1c1a19;
+  margin-bottom: 25px; /*espacement avec la boite en dessous*/
+  background-color: white;
+  text-align: center;
+  font-family: impact;
+  font-size: x-large;
+}
+
+  
+
+#banniere_im1
+{
+
+  margin-top: 15px;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px; /*arrondit les angles*/
+  position: relative;
+  box-shadow: 4px 4px 4px #1c1a19;
+  margin-bottom: 25px; /*espacement avec la boite en dessous*/
+  background-color: white;
+  /*margin-left: 160px;*/
+}
+#banniere_im1:hover
+{
+  background-color: grey;
+  text-decoration: underline;
+}
+
+
+#banniere_im2
+{
+  margin-top: 15px;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px; /*arrondit les angles*/
+  position: relative;
+  box-shadow: 4px 4px 4px #1c1a19;
+  margin-bottom: 25px; /*espacement avec la boite en dessous*/
+  background-color: white;
+  margin-left: 160px;
+ 
+}
+#banniere_im2:hover
+{
+  background-color: grey;
+  text-decoration: underline;
+}
+
+
+
+#banniere_im3
+{
+    margin: auto;
+    margin-top: 15px;
+    height: 200px;
+    width: 400px;
+    border-radius: 5px; /*arrondit les angles*/
+    position: relative;
+    box-shadow: 4px 4px 4px #1c1a19;
+    margin-bottom: 25px; /*espacement avec la boite en dessous*/
+    background-color: white;
+}
+#banniere_im3:hover
+{
+  background-color: grey;
+  text-decoration: underline;
+}
+
+
+
+
+
+#banniere_im4
+{
+  margin-top: 15px;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px; /*arrondit les angles*/
+  position: relative;
+  box-shadow: 4px 4px 4px #1c1a19;
+  margin-bottom: 25px; /*espacement avec la boite en dessous*/
+  background-color: white;
+  border-right: 50px;
+}
+#banniere_im4:hover
+{
+  background-color: grey;
+  text-decoration: underline;
+}
+
+
+
+
+#banniere_im5
+{
+  margin-top: 15px;
+  height: 200px;
+  width: 400px;
+  border-radius: 5px; /*arrondit les angles*/
+  position: relative;
+  box-shadow: 4px 4px 4px #1c1a19;
+  margin-bottom: 25px; /*espacement avec la boite en dessous*/
+  background-color: white;
+  margin-left: 160px;
+}
+#banniere_im5:hover
+{
+  background-color: grey;
+  text-decoration: underline;
+}
+
+
+
+section
+{
+    display: flex;
+    /*border: solid;*/
+}
+
+
+
+
+
+
+
