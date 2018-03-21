@@ -1,0 +1,55 @@
+.affiche
+{
+    /* Pour le centrer dans la page */
+
+   
+    width: 710px;
+    margin-left: 0px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+    font-size: 20px;
+    border: 1px solid yellow;
+    background: url("../images/Montpellier.jpg")  no-repeat center;
+   
+}
+.anonceur
+{
+  background: rgba( 255, 255, 255, 0.5);  
+  border-radius: 10px;
+    margin-top: 0px;
+    padding-top: 2px;
+    height: 300px;
+   
+}
+.cote
+{
+     margin-left: 80px;
+}
+.diferenteDiv
+{
+    float: left;
+    width: 300px;
+}
+label
+{
+    background: blue;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    
+}
+.message
+{
+   background:white;
+    font-size: 15px;
+    color: black;
+    text-align: center; 
+}
+.clean
+{
+    clear: both;
+}

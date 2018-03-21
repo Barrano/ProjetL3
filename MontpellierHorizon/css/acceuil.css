@@ -1,4 +1,169 @@
-body
-{
-    background: url(../images/Montpellier.jpg) no-repeat center;
+
+body{
+	margin: 0px;
+	padding: 0px;
+	background-image:url("../images/Fond.jpg");
+
+	}
+	img.p5{
+		text-align: center;
+		line-height: 160px;
+		width: 591px;
+		height: 191px;
+		margin-left:auto;
+		margin-right:auto;
+		}
+		
+		#carousel-example-generic{
+		position: relative;
+		left: 250px;
+		width: 600px;
+		height: 180px;
+		bottom:300px;
+		text-align:center;
+		
+		}
+		
+		.i{
+			position:absolute;
+			top:220px;
+			right:180px;
+		
+		}
+	
+		.p6{
+			top:10px;
+			text-align:center;
+			left:100px;
+			color: purple;
+			font-size: 15px;
+			line-height: 1.5em;
+			background-color: #e5e4d7;
+			padding: 10px;
+			position: center;
+		
+			border-color:black;
+			border-width: 1px;
+			border-style: solid;
+			margin: 10px;
+			}
+			
+	.p3{
+		color: purple;
+		font-size: 15px;
+		line-height: 1.5em;
+		background-color: #e5e4d7;
+		padding: 10px;
+		position: absolute;
+		bottom:300px;
+		left:5px;
+		border-color:black;
+		border-width: 1px;
+		border-style: solid;
+		margin: 10px;
+		}
+     .p4{
+		color: purple;
+		font-size: 15px;
+		line-height: 1.5em;
+		background-color: #e5e4d7;
+		padding: 27px;
+		position: absolute;
+		bottom:100px;
+		left:5px;
+		border-color:black;
+		border-width: 1px;
+		border-style: solid;
+		margin: 10px;
+		}
+
+	
+	.right{
+		position: absolute;
+		bottom:550px;
+		right:200px;
+	}
+		#menu{
+		width: 200px;
+		height: 300px;
+		background-color:#fff;
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16),0 
+		3px 6px rgba(0,0,0,0.23);
+		margin:20px; 
+		position: absolute;
+		bottom:0px;	
+		line-height: 3em;
+
+	
+	}
+	
+
+	#menu ul ul{		
+		position: relative;
+		
+		visibility:hidden;
+		line-height: 1em;
+		top:10px;
+		left:10px;
+	}	
+	#menu ul li:hover ul{
+		visibility: visible;
+				
+	}
+
+img.p1{
+	width: 250px;
+	height: 80px;
+	position:relative;
+	top;
 }
+img.p2{
+	width: 1355px;
+	height: 180px;
+	position:relative;
+	top;
+}
+.button{
+	height: 55vh;
+	
+	}
+#niv1{
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	}
+	#niv1 li{
+		list-style: none;
+		border: 2px solid #fff;
+		border-color: grey;
+		font-size: 18px;
+		font-weight: bold;
+		margin: 0px;
+		border-radius:15px;
+		font-family: arial;
+		
+		}
+		#niv1 li a {
+			text-decoration: none;
+			padding: 8px 30px;
+			display: block;
+			text-align: center;
+			border-radius:15px;
+			transition: all 0.5s ease-in-out;
+			}
+			#niv1 li:nth-child(1) a{
+				color: grey;
+				border:2px solid rgb(255,30,50,1);
+				}
+				ul li:nth-child(2) a{
+				color: grey;
+				border:2px solid rgb(255,30,50,1);
+				}
+			#niv1 li:nth-child(1):hover a{
+				box-shadow: 0px 0px 10px rgb(255,30,50,0.5), 0px 0px 10px rgb(255,30,50,1);
+				background-color: #CEC7C6;
+				}
+				#niv1 li:nth-child(2):hover a{
+				box-shadow: 0px 0px 10px rgb(255,30,50,0.5), 0px 0px 10px rgb(255,30,50,1);
+				background-color: #CEC7C6;
+				}

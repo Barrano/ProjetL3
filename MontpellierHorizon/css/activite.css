@@ -1,0 +1,103 @@
+body
+{
+  
+   background: url("../images/imageRcran/imageMontpellier.jpg")  repeat center;  
+}
+h2
+{
+    text-align: center;
+    color: Blue;
+    background: rgba( 255, 255, 255, 0.5);  
+    border-radius: 10px;
+    
+}
+#bouto /* login.php */
+{
+  text-align: center;
+    font-size: 25px;
+}
+   
+
+.bouton :hover
+{
+    font-size:20px;
+     text-align: center;
+    color: red;
+    font-size: 25px;
+}
+th
+{
+    color: blue;
+}
+td
+{
+    color:black;
+}
+.formulaire
+{
+    /* Pour le centrer dans la page */
+
+   
+    width: 673px;
+    margin-left: 290px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    border: 1px solid yellow;
+    background: url("../images/Montpellier.jpg")  no-repeat center;
+   
+}
+.tablee
+{
+  background: rgba( 255, 255, 255, 0.5);  
+  border-radius: 10px;
+    margin-top: 0px;
+    padding-top: 2px;
+    color: orange;
+   margin-left: 0px;
+}
+
+
+footer
+{
+    margin-left: 60px;
+}
+.lien
+{
+    float: left;
+    padding-right: 130px;
+}
+.espace
+{
+    height: 108px;
+    width: 100%;
+}
+.suivez
+{
+    padding-right: 10px;
+}
+.paragraphe
+{
+    text-align: center;
+    text-decoration:underline;
+     font-size: 16px;
+    text-transform: uppercase;
+     text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.info
+{
+    text-align: center;
+     margin-left: 60px;
+  
+}
+#information
+{
+    background:url(../images/imageRcran/fond.jpg) no-repeat center top;
+    text-align: center;
+    width: 130px;
+    border-radius: 20px;
+   
+}
+

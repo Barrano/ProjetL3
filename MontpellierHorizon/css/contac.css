@@ -1,0 +1,134 @@
+body
+{
+   background: url("../images/imageRcran/imageMontpellier.jpg")  repeat center; 
+}
+.couleur
+{
+  background: #FCFAE1;
+    width: 660px;
+    height: 50px;
+}
+.formulaire
+{
+    width: 660px;
+    margin-left: 350px;/* ce la nous a permis de deplacer notre div de gauche vers la droite de 400px*/
+    border-radius: 10px;
+    background: rgba( 255, 255, 255, 0.5);
+    border-radius: 5px;
+    border: 1px solid yellow;
+    color: blue;
+     background-color: aliceblue;
+    border-radius: 10px;
+    font-size: 20px;
+  
+    
+     margin-top: 40px;
+        
+}
+.conta
+{
+    background: rgba( 255, 255, 255, 0.5);  
+    border-radius: 10px;
+}
+#message
+{
+    width: 500px;
+    height: 70px;
+    border-radius: 10px;
+}
+div
+{
+    float: left;
+}
+h2
+{
+    text-align: center;
+    font-size: 30px;
+    text-transform: capitalize;
+    border-bottom: 1px solid white;
+    color: blue;
+    
+   
+}
+label
+{
+    font-size: 25px;
+    background: white;
+    border-radius: 10px;
+}
+input
+{
+    font-size: 20px;
+    border-radius: 10px;
+    color: blue;
+}
+
+.boutton
+{
+    text-align: center;
+    width: 660px;
+    background: white;
+    color: blue;
+    font-size: 25px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+.MsgeErr
+{
+    color: red;
+}
+.Msgeenvoi
+{
+    color: blue;
+    text-align: center;
+    font-size: 30px;
+}
+.etoile
+{
+    color: black;
+}
+
+
+
+
+footer
+{
+    margin-left: 60px;
+}
+.lien
+{
+    float: left;
+    padding-right: 130px;
+}
+.espace
+{
+    height: 28px;
+    width: 100%;
+}
+.suivez
+{
+    padding-right: 10px;
+}
+.paragraphe
+{
+    text-align: center;
+    text-decoration:underline;
+     font-size: 16px;
+    text-transform: uppercase;
+     text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.info
+{
+    text-align: center;
+     margin-left: 60px;
+  
+}
+#information
+{
+    background:url(../images/imageRcran/fond.jpg) no-repeat center top;
+    text-align: center;
+    width: 130px;
+    border-radius: 20px;
+   
+}
+

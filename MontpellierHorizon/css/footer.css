@@ -1,0 +1,46 @@
+
+footer
+{
+    margin-left: 60px;
+}
+.lien
+{
+    float: left;
+    padding-right: 130px;
+}
+.espace
+{
+    height: 108px;
+    width: 100%;
+}
+.suivez
+{
+    padding-right: 10px;
+}
+.paragraphe
+{
+    text-align: center;
+    text-decoration:underline;
+     font-size: 16px;
+    text-transform: uppercase;
+     text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.info
+{
+    text-align: center;
+     margin-left: 60px;
+  
+}
+#information
+{
+    
+    text-align: center;
+    width: 130px;
+    border-radius: 20px;
+}
+.type
+{
+    float: left;
+    width: 105px;
+   
+}

@@ -1,22 +1,30 @@
 body
 {
+  
    background: url("../images/imageRcran/imageMontpellier.jpg")  repeat center; 
-}
+ 
 
-
-h2
-{
-    text-align: center;
-    font-size: 30px;
-    text-transform: capitalize;
-    border-bottom: 1px solid white;
-    color: blue;
-    
    
 }
+#bouto /* login.php */
+{
+  text-align: center;
+    font-size: 25px;
+}
+   
 
-
-
+.bouton :hover
+{
+    font-size:20px;
+     text-align: center;
+    color: red;
+    font-size: 25px;
+}
+.MssgErr
+{ text-align: center;
+    color: red;
+    font-size: 15px;
+}
 .formulaire
 {
     /* Pour le centrer dans la page */
@@ -39,65 +47,20 @@ h2
   background: rgba( 255, 255, 255, 0.5);  
   border-radius: 10px;
 }
-
-
-
-
-div
-{
-    float: left;
-    
-}
-
-label {
-    /* Afin de s'assurer que toutes les étiquettes aient la même dimension et soient alignées correctement */
-    display: inline-block;
-    width: 90px;
-    text-align: center;
-    color: blue;
-    font-size: 20px;
-    background: white;
-    border-radius: 10px;
-}
-.valid
-{
-     width: 100%;
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-    font-size: 22px;
-     background: black;
-    color:blue;
-}
-.boutton
-{
-    text-align: center;
-    width: 600px;;
-    background: none;
-    color: blue;
-    font-size: 25px;
-}
-.boutton:hover
-{
-    color: red;
-    font-size: 30px;
-}
-.MssgEvoi
-{
-    text-align: center;
-    color: blue;
-
-}
-.MssgErr
-{
-    color: red;
-    font-size: 15px;
-}
 input
 {
-     border-radius: 10px;
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
 }
-
+label
+{
+    background: white;
+   font-size: 20px;
+    color:blue;
+    border-radius: 10px;
+}
 
 footer
 {
@@ -110,7 +73,7 @@ footer
 }
 .espace
 {
-    height: 40px;
+    height: 108px;
     width: 100%;
 }
 .suivez
@@ -121,10 +84,9 @@ footer
 {
     text-align: center;
     text-decoration:underline;
-    font-size: 16px;
+     font-size: 16px;
     text-transform: uppercase;
-    
-    text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+     text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
 }
 .info
 {
@@ -140,16 +102,4 @@ footer
     border-radius: 20px;
    
 }
-
-
-
-
-
-
-
-
-
-
-
-
 

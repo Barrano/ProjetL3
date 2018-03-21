@@ -1,9 +1,11 @@
 <?php
-$nom=$prenom=$phone=$adresse=$email=$password="";
-$nomErr=$prenomErr=$phoneErr=$adresseErr=$emailErr=$passwordErr="";
+
+require "conexion.php";
+$nom=$prenom=$phone=$adresse=$email=$password=$mdpc=$image="";
+$nomErr=$prenomErr=$phoneErr=$adresseErr=$emailErr=$passwordErr=$mdpcErr=$imageErr="";
 $suces=false;
 
-if($_SERVER['REQUEST_METHOD']=="POST")
+if(!empty($_POST))
 {
     $nom=securite($_POST["nom"]);
     $prenom=securite($_POST["prenom"]);
@@ -11,6 +13,13 @@ if($_SERVER['REQUEST_METHOD']=="POST")
     $adresse=securite($_POST["adresse"]);
     $email=securite($_POST["email"]);
     $password=securite($_POST["pass"]);
+    $mdpc=securite($_POST["mdpc"]);
+    
+    $image=securite($_FILES["image"]["name"]);
+    $imagePath='images/'.basename($image);
+    $imageExtension=pathinfo($imagePath,PATHINFO_EXTENSION);
+    
+    $isUpload=false;
     $suces=true;
     
     if(empty($nom))
@@ -33,7 +42,22 @@ if($_SERVER['REQUEST_METHOD']=="POST")
     {
         $emailErr="Veuillez saisir votre email s'il vous plait !";
          $suces=false;
-    }
+    }else
+     {
+         
+         $db=database::connect();
+         $resu=$db->query("select email_uti from utilisateur ");
+         while($ligne=$resu->fetch())
+         {
+             $test=$ligne['email_uti'];
+             if($test==$email)
+             {
+                 $emailErr="Ce nom utilisateur existe deja !";
+                 $suces=false;   
+             }
+         }
+         database::disconnect();
+     }
     
     if(empty($adresse))
     {
@@ -46,10 +70,58 @@ if($_SERVER['REQUEST_METHOD']=="POST")
         $passwordErr="Veuillez saisir votre mot de passe s'il vous plait !";
          $suces=false;
     }
-    /* ----------------------------------xa commence ici la base de donnee---------------------------------*/
-    if($suces)
+    if(empty($mdpc))
     {
+        $mdpcErr="Veuillez confirmer le mot de pass s'il vous plait !";
+        $suces=false;
+    }   
+    else
+     {
+       if($mdpc!=$password)
+       {
+          $mdpcErr="Le mot de pass sont differents merci de reessayer !";
+          $suces=false; 
+       }
+     }
+    if(empty($image))
+    {
+        $imageErr="Téléchargez une photo de profil s'il vous plait !";
+        $suces=false;
+    }
+        else
+        {
+            $isUpload=true;
+            if($imageExtension!="jpg" && $imageExtension!="png" && $imageExtension!="jpeg" && $imageExtension!="gif" && $imageExtension!="JPG" && $imageExtension!="PNG" && $imageExtension!="JPEG" && $imageExtension!="GIF")
+            {
+                 $imageErr="Les images autorisées sont de type:png,jpg,jpeg et gif !";
+                 $isUpload=false;
+            }
+            
+            if($_FILES["image"]["size"]>500000)
+            { 
+               $imageErr="Cette Image ne doit pas dépasser 500KB merci de recommencer";
+               $isUpload=false; 
+            }
+            if($isUpload)
+            {
+                if(!move_uploaded_file($_FILES["image"]["tmp_name"],$imagePath))
+                {
+                   $imageErr="Erreur lors de telechargement merci de recommencer !";
+                   $isUpload=false;  
+                }
+            }
+        }
+    /* ----------------------------------xa commence ici la base de donnee---------------------------------*/
+    if($suces && $isUpload)
+    {
+        $db=database::connect();
+        $resulta=$db->prepare(" INSERT into utilisateur (id_uti,nom_uti,prenom_uti,phone_uti,adresse_uti,email_uti,password_uti,image_uti) values(?,?,?,?,?,?,?,?)");
+        $resulta->execute(array(null,$nom,$prenom,$phone,$adresse,$email,$password,$image));
         
+        $_SESSION['var']=$image;
+        header("location: menuConecte.php");
+       
+    database::disconnect();
     }
      /* ----------------------------------xa fini ici la base de donnee---------------------------------*/
         
@@ -93,9 +165,11 @@ function securite($var)
      <meta charset="utf-8">
   </head>
   <body>
-      <?php include "menu.php"; ?>
-      <div class="formulaire"> 
-       <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post" class="inscription">
+     
+     <?php  include "header.php";?>
+      <div class="formulaire" style="overflow: auto;
+                 height: 300px;"> 
+       <form action="inscription.php" method="post" class="inscription" enctype="multipart/form-data">
             <h2>Formulaire d'inscription:</h2>
             <div>
                 <label for="nom">Nom:</label>
@@ -127,9 +201,29 @@ function securite($var)
                 <input type="password" id="pass" name="pass" value="<?php echo $password ?>">
                 <p class="MssgErr"><?php echo $passwordErr ?></p>
             </div>
+           <div>
+                <label for="mdpc">Confirmer:</label>
+                <input type="password" id="mdpc" name="mdpc" value="<?php echo $mdpc ?>">
+                <p class="MssgErr"><?php echo $mdpcErr ?></p>
+            </div>
+           <div>
+                <label for="image">Image:</label>
+                <input type="file" id="image" name="image" >
+                <p class="MssgErr"><?php echo $imageErr ?></p>
+            </div>
             <input type="submit" value="Valider" class="boutton" >
             <p class="MssgEvoi" style="display:<?php if($suces) echo "block"; else echo "none"; ?>"   > vous etes bien inscrit </p>   
         </form> 
       </div>
+      
+    
+        
+          
+          
+          
+          
+          
+      
+      
     </body>   
 </html>

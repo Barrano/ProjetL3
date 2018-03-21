@@ -1,0 +1,167 @@
+body
+{
+  
+   background: url("../images/imageRcran/imageMontpellier.jpg")  repeat center; 
+ 
+
+   
+}
+h2
+{
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    text-transform: uppercase;
+}
+.bouton_liste
+{
+    margin-left: 200px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    text-shadow: 5px 5px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+    text-transform: uppercase;
+}
+#bouto /* login.php */
+{
+  text-align: center;
+    font-size: 25px;
+}
+   
+
+.bouton :hover
+{
+    font-size:20px;
+     text-align: center;
+    color: red;
+    font-size: 25px;
+}
+.MssgErr
+{ 
+    text-align: center;
+    color: red;
+    font-size: 15px;
+}
+.formulaire
+{
+    /* Pour le centrer dans la page */
+
+   
+    width: 710px;
+    margin-left: 0px;
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+    
+    font-size: 20px;
+    border: 1px solid yellow;
+    background: url("../images/Montpellier.jpg")  no-repeat center;
+   
+}
+.inscription
+{
+  background: rgba( 255, 255, 255, 0.5);  
+  border-radius: 10px;
+    margin-top: 0px;
+    padding-top: 2px;
+}
+#sele
+{
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+}
+option
+{
+    font-size: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    text-align: 
+}
+select
+{
+    font-size: 20px;
+    width: 100px;
+    text-align: center;
+    border-radius: 10px;
+}
+.sele
+{
+    font-size: 20px;
+   width: 655px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+#seleadresse
+{
+     font-size: 20px;
+   width: 571px;
+    text-align: center;
+    border-radius: 10px;
+}
+.message
+{
+    font-size: 20px;
+    width: 570px;
+    text-align: center;
+    border-radius: 10px;
+}
+#information
+{
+    background:url(../images/imageRcran/fond.jpg) no-repeat center top;
+    text-align: center;
+    width: 130px;
+    border-radius: 20px;
+}
+.type
+{
+    float: left;
+    width: 100px;
+    padding-right: 50px;
+  }
+.clean
+{
+    clear: both;
+}
+
+thead
+{
+    margin-left: 20px;
+    color :blue;
+    background: rgba( 225, 255, 25, 0.5);  
+    
+}
+tbody
+{
+    background: rgba( 25, 05, 255, 0.5);  
+    color: white;
+}
+.menu:hover
+{
+    background:black;
+    color: red;
+}
+.menu
+{
+    background: blue;
+    color: white;
+    border-radius: 10px;
+}
+
+ul
+{
+    list-style: none;
+}
+label
+{
+    background: blue;
+    
+}
+
+/* _______________________________________propose.php________________________________________*/
