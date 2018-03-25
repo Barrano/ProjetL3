@@ -1,0 +1,39 @@
+
+body{
+background-image:url("../images/Fond.jpg");
+}
+
+nav
+{
+
+    float: left;
+    width: 270px;
+    border: 1px solid black;
+}
+
+section
+{
+    margin-left: 1100px;
+    border: 1px solid black;
+
+}
+.p1{
+	font-size:18px;
+	border: 1px solid black;
+	
+}
+.historique{
+	
+	margin-right:1100px;
+    border: 1px solid black;
+	
+}
+			#chart-container {
+				position:absolute;
+				top:250px;
+				margin-left:400px;
+				width: 500px;
+				height: auto;
+              background-color: white;
+                border-radius: 10px;
+			}
